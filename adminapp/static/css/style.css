@@ -1,0 +1,9 @@
+.left{
+background-color:pink;
+min-height:600px;
+}
+.right{
+min-height:600%;
+background-color: hsla(14, 100%, 53%, 0.6);
+}
+

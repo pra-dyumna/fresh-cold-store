@@ -1,0 +1,58 @@
+{% extends "adminbase.html" %}
+{% block body %}
+<h3 style="color:black;text-align:center; font-family:Arial black;">
+  Booking Details
+</h3>
+<div class="row">
+  <div class="col-sm-12">
+    {% if res %}
+    <table border="1" style="width:75%;margin:0 auto;" class="table table-bordered border-dark ">
+      <tr>
+        <th>Name</th>
+        <td>{{res.name}}</td>
+      </tr>
+       <tr>
+        <th>Address</th>
+        <td>{{res.address}}</td>
+      </tr>
+       <tr>
+        <th>Contact No</th>
+        <td>{{res.contactno}}</td>
+      </tr>
+       <tr>
+        <th>Aadhar No</th>
+        <td>{{res.aadharno}}</td>
+      </tr>
+       <tr>
+        <th>No.of Packets</th>
+        <td>{{res.noofpacket}}</td>
+      </tr>
+       <tr>
+        <th>Duration in Months</th>
+        <td>{{res.duration}}</td>
+      </tr>
+       <tr>
+        <th>Rate per months per packet</th>
+        <td>{{res.rate}}</td>
+      </tr>
+       <tr>
+        <th>Total Amount</th>
+        <td>{{res.totalamt}}</td>
+      </tr>
+       <tr>
+        <th>Advance Amount</th>
+        <td>{{res.advance}}</td>
+      </tr>
+       <tr>
+        <th>Rest Amount</th>
+        <td>{{res.restamt}}</td>
+      </tr>
+       <tr>
+        <th>Booking Date</th>
+        <td>{{res.bookingdate}}</td>
+      </tr>
+    </table>
+    {% endif %}
+  </div>
+</div>
+{% endblock body %}
